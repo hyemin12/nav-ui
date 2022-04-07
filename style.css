@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100%;
+  background-color: #eaeaea;
+  padding: 30px 0;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+h3 {
+  cursor: pointer;
+}
+.nav__btn__white {
+  background-color: #fff;
+  padding: 7px 20px;
+  border-radius: 20px;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav__btn__color {
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+  padding: 7px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section {
+  width: 1000px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #666;
+  font-size: 14px;
+}
+ul.nav__list li.active {
+  color: #333;
+  font-weight: bold;
+}
+.user__img {
+  display: flex;
+  align-items: center;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* NAV1 */
+#nav1 .user__img img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#nav1 ul.nav__list li i {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* NAV2 */
+#nav2 ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#nav2 li:first-child i:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  color: #aaa;
+}
+#nav2 li:first-child i:last-child {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #ccc;
+}
+#nav2 li:last-child {
+  position: relative;
+}
+
+#nav2 li:last-child i {
+  color: #cccccc;
+  font-size: 18px;
+  position: relative;
+}
+#nav2 li:last-child::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2";
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: purple;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  z-index: 1;
+}
+
+/* NAV3 */
+#nav3 i {
+  color: #ccc;
+  font-size: 18px;
+  position: relative;
+}
+#nav3 i::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: purple;
+  position: absolute;
+  top: 0px;
+  right: 00px;
+  z-index: 1;
+}
+#nav3 .user-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* NAV4 */
+#nav4 .nav-wrapper {
+  justify-content: start;
+  gap: 70px;
+  position: relative;
+}
+#nav4 .nav__btn__white {
+  position: absolute;
+  right: 0;
+}
+#nav4 .nav__signin__bg {
+  width: 250px;
+  height: 63px;
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+  position: absolute;
+  right: -30px;
+}
+#nav4 .nav__signin__bg::before {
+  content: "";
+  border-left: 63px solid transparent;
+  border-bottom: 63px solid #5f72bd;
+  position: absolute;
+  left: -63px;
+  bottom: 0;
+}
+
+/* NAV5 */
+#nav5 {
+  height: 70px;
+}
+#nav5 .nav-wrapper {
+  align-items: center;
+  position: relative;
+}
+#nav5 .nav__list {
+  margin-left: 70px;
+  flex-grow: 1;
+}
+#nav5 .nav__list li {
+  position: relative;
+}
+#nav5 .nav__list li.active::before {
+  content: "";
+  width: 150%;
+  height: 2px;
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+  position: absolute;
+  left: -10px;
+  bottom: -25px;
+}
+#nav5 .header__right {
+  align-items: center;
+  gap: 20px;
+}
+#nav5 .header__right i {
+  font-size: 18px;
+  color: #ccc;
+}
+#nav5 .header__right .user__img {
+  gap: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#nav5 .header__right .user__img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+#nav5 .header__right .user__img > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+  border-radius: 50%;
+}
+#nav5 .header__right .user__img i {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* NAV6 */
+#nav6 .nav__search {
+  display: flex;
+  position: relative;
+}
+#nav6 .nav__search input {
+  width: 200px;
+  /* height: 30px; */
+  padding: 7px 20px;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  border: none;
+}
+#nav6 .nav__search i {
+  font-size: 14px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* NAV7 */
+#nav7 .nav-wrapper {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+#nav7 .sns__group {
+  display: flex;
+  gap: 15px;
+  color: #555;
+  font-size: 14px;
+}
+#nav7 .nav__list {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+#nav7 .nav__list li.active {
+  position: relative;
+}
+#nav7 .nav__list li.active::before {
+  content: "";
+  width: 150%;
+  height: 2px;
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+  position: absolute;
+  left: -25%;
+  bottom: -20px;
+}
+
+/* NAV8 */
+#nav8 {
+  background-image: linear-gradient(to right, #5f72bd 0%, #9b23ea 100%);
+}
+#nav8 .nav__list {
+  color: #fff;
+}
+#nav8 .nav__list li.active {
+  color: #fff;
+  position: relative;
+}
+#nav8 .nav__list li.active::before {
+  content: "";
+  width: 170%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: -35%;
+  bottom: -28px;
+}
+#nav8 .header__right i {
+  font-size: 16px;
+  color: #fff;
+}
+#nav8 .header__right .user__img {
+  gap: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+#nav8 .header__right .user__img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+#nav8 .header__right .user__img > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+}
